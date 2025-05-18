@@ -1,18 +1,20 @@
 const logotext = "JOHN";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Digital Marketing",
+    description: "We are a results-driven digital marketing company specializing in SEO, social media, content marketing, and paid ads. Our mission is to help your brand grow online, reach the right audience, and achieve measurable success.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "Get to Know Us",
+
+    
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "Your Growth, Our Strategy",
+        second: "Smart Solutions for Online Success",
+        third: "Empowering Brands Digitally",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "We are a results-driven digital marketing company. We specialize in SEO, social media, content marketing, and paid ads. Our mission is to grow your brand online and deliver measurable success.",
+    your_img_url: "https://imgs.search.brave.com/nkNclwHhZ9LRBy9AdhxyqGmUG0969exRVMmgI527-ks/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2U0Lzhk/LzIzL2U0OGQyM2Q5/NzQ2NzI1NGVhZGNk/ODI5NDU0MTRmNDE5/LmpwZw",
 };
 
 const dataabout = {

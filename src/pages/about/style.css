@@ -1,100 +1,112 @@
+/* Container spacing */
+.About-header {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  color: var(--text-color, #333);
+}
+
+/* Section spacing */
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+  margin-bottom: calc(3rem + 5.128vw);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.table td,
-.table th {
-    color: var(--text-color);
+/* Left column (headings) */
+.sec_sp > .col-lg-5 {
+  flex: 0 0 35%;
+  max-width: 35%;
+  padding-right: 1rem;
 }
 
-.t_border {
-    border-color: var(--text-color) !important;
+.color_sec {
+  color: var(--secondary-color, #ff5722);
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-left: 5px solid var(--secondary-color, #ff5722);
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-.progress-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 15px 0 20px;
-    font-family: 'Raleway';
+/* Right column (content) */
+.sec_sp > .col-lg-7 {
+  flex: 1;
+  max-width: 65%;
 }
 
+/* Service block inside right column */
+.service_ {
+  padding: 0.5rem 0;
+}
+
+.service_desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color, #444);
+}
+
+/* Style lists inside descriptions */
+.service_desc ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: var(--text-color, #444);
+}
+
+.service_desc ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive typography */
+@media (max-width: 992px) {
+  .sec_sp > .col-lg-5,
+  .sec_sp > .col-lg-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .color_sec {
+    font-size: 1.5rem;
+    border-left-width: 4px;
+  }
+}
+
+/* Progress bar styles - you can use if needed later */
 .progress {
-    height: 5px;
-    background: var(--secondary);
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 30px;
-    overflow: visible;
+  height: 5px;
+  background: var(--secondary, #f0f0f0);
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 30px;
+  overflow: visible;
 }
 
 .progress .progress-bar {
-    position: relative;
-    background: var(--text-color);
-    animation: animate-positive 2s;
-    overflow: visible;
-    opacity: 0.9;
+  position: relative;
+  background: var(--text-color, #333);
+  animation: animate-positive 2s forwards;
+  opacity: 0.9;
 }
 
 .progress .progress-value {
-    position: absolute;
-    top: -30px;
-    right: 8px;
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
-    color: var(--text-color);
-}
-
-@-webkit-keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
+  position: absolute;
+  top: -30px;
+  right: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--text-color, #333);
 }
 
 @keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
-}
-
-.section-title {
-    font-size: 45px;
-}
-
-.service__title {
-    padding: 8px 0;
-    border-bottom: solid 2px var(--secondary-color);
-}
-
-.service-section .service-category-title {
-    padding-bottom: 4px;
-}
-
-
-/*! CSS Used keyframes */
-
-@-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
